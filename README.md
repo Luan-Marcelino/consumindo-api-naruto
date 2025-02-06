@@ -12,4 +12,3 @@ Este é um projeto de uma página web que consome uma API de Naruto para exibir 
 
 https://naruto-br-api.site/
 
-path:*.js
