@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --vermelho: #ef4335;
+    --laranja:#f68b36;
+    --amareloEscuro: #f2cd4f;
+    --amareloClaro: #cae081;
+    --verde:#88eed0;
+    --branco: #ffffff;
+    --preto: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Roboto Condensed", serif;
+}
+
+body{
+    --bg: var(--vermelho);
+    --bgInfos: var(--laranja);
+    --inputColor: var(--amareloClaro);
+    --resposta:var(--amareloEscuro);
+    --buttonColor: var(--verde);
+    --fontContador: var(--vermelho);
+    --fontColor: var(--laranja);
+    --fontInfo: var(--vermelho);
+
+    background-color: var(--bg);
+    
+}
+
+.conteiner {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#conteiner-contador {
+    display: flex;
+    width: 700px;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-contador{
+    width: 60px;
+    translate: 2px 3px ;
+    
+}
+
+.contador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    
+}
+
+.input-contador {
+    width: 90px;
+    height: 90px;
+    background-color: var(--inputColor);
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 2.5em;
+    color: var(--fontContador);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    text-align: center;
+    
+}
+
+.input-contador::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.button-contador {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    color: var(--inputColor);
+    background-color: var(--buttonColor);
+    translate: 40px -25px;
+    outline: none;
+}
+
+.button-contador i {
+    color: var(--fontContador);
+    outline: none;
+}
+
+.seta-contador-esquerda, .seta-contador-direta {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+}
+
+
+.seta-contador-esquerda i, .seta-contador-direta i {
+    transform: scale(4);
+    color: var(--buttonColor);
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgInfos);
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.container-info h1 {
+    height: 30px;
+    color: var(--fontInfo);
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagem {
+    
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+}
+
+.img-info {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}    
+
+.infos-API {   
+    width: 500px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100px 80% ;
+    grid-template-rows: 30px 30px 30px 200px;
+    gap: 10px;
+    padding: 20px; 
+    align-content: center
+}
+
+
+.tela-resposta-vila, .tela-resposta-patente, .tela-resposta-jutsus,.tela-resposta-resumo {
+    background-color: var(--resposta);
+    border-radius: 0px 10px 10px 0px;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    padding-left: 6px;
+    color: var(--preto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tela-resposta-resumo{
+    resize: none;
+    padding: 10px;
+    overflow-y: hidden;
+}
+
+
+
