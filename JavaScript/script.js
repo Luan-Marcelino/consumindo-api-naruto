@@ -27,6 +27,7 @@ async function narutoApiPersonagens(personagem){
     
 }
 
+
 //Funções
 function imprimindo_resposta(obj) {
 
