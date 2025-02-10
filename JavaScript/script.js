@@ -1,7 +1,6 @@
 //Declarando Variáveis no DOM
 const seta_direita = document.querySelector('.seta-contador-direta');
 const seta_esquerda = document.querySelector('.seta-contador-esquerda');
-const logo_seta_esquerda = document.querySelector('.fa-left-long');
 
 let input_contador = document.querySelector('.input-contador');
 const button_contador = document.querySelector('.button-contador');
@@ -15,8 +14,6 @@ const info_img = document.querySelector('.img-info');
 
 let nome_personagem = document.querySelector('.nome-personagem');
 
-
-
 //Consumindo API
 async function narutoApiPersonagens(personagem){
     const resposta = await fetch(`https://naruto-br-api.site/characters/${personagem}`);
@@ -26,11 +23,14 @@ async function narutoApiPersonagens(personagem){
     }else{
         imprimindo_resposta_undefined();
     }
-        
+    
+    
 }
+
 
 //Funções
 function imprimindo_resposta(obj) {
+
     info_img.src = obj.profile_image;
     nome_personagem.innerHTML = obj.name;
     info_vila.innerHTML = obj.village.name;
@@ -44,6 +44,7 @@ function imprimindo_resposta(obj) {
     }
     
     info_resumo.innerHTML = obj.summary;
+
 }
 
 function imprimindo_resposta_undefined(){
@@ -55,28 +56,16 @@ function imprimindo_resposta_undefined(){
     info_jutsus.innerHTML = 'Não localizado';
 }
 
-
-function escondendoBTN() { //função para esconder a seta quando o numero for menor ou igual a 1 
-    if(input_contador.value <=1){
-        logo_seta_esquerda.style.display = "none";
-    }else{
-        logo_seta_esquerda.style.display = "block";
-    }
-
-}
-
 //Listeners dos botões da seta
 seta_direita.addEventListener('click', () => {
     input_contador.value++;
     narutoApiPersonagens(input_contador.value);
-    escondendoBTN();
 })
 
 seta_esquerda.addEventListener('click', () => {
      if(input_contador.value > 1){
         input_contador.value--;
         narutoApiPersonagens(input_contador.value);
-        escondendoBTN();
     }   
 })
 
@@ -84,7 +73,4 @@ seta_esquerda.addEventListener('click', () => {
 button_contador.addEventListener('click', () => {
     narutoApiPersonagens(input_contador.value);
     input_contador.value = '';
-    escondendoBTN();
 })
-
-escondendoBTN();
