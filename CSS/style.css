@@ -31,7 +31,7 @@ body{
     --fontInfo: var(--vermelho);
 
     background-color: var(--bg);
-    
+    height: 100dvh;
 }
 
 .conteiner {
@@ -136,7 +136,6 @@ body{
 }
 
 .imagem {
-    
     width: 250px;
     height: 250px;
     padding: 10px;
