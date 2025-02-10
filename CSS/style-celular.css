@@ -1,0 +1,60 @@
+
+@media (orientation : portrait) or (max-width: 320px) {
+    
+    
+
+    .conteiner {
+        display: flex;
+        margin-top: 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        
+    }
+
+    #conteiner-contador {
+        width: 170px;
+        justify-content: space-between;
+        
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem {
+        margin-top: 10px;
+        width: 50%;
+        height: 50%;
+        padding: 5px;
+    }
+
+
+    .container-info {
+        padding: 5px;
+        height: 100%;
+    }
+
+    .infos-API {
+        width: 100%;
+        font-size: 14px;
+        grid-template-columns:  1fr 3fr;
+        grid-template-rows: 1fr 1fr 1fr 4fr;
+        
+    }
+
+    .seta-contador-esquerda, .seta-contador-direta {
+        width: 25px;
+        height: 25px;
+        translate: 0 15px;
+    }
+
+    .seta-contador-esquerda i, .seta-contador-direta i {
+        transform: scale(2);
+    }
+
+    
+    
+}
