@@ -121,6 +121,7 @@ body{
     background-color: var(--bgInfos);
     padding: 15px;
     border-radius: 30px;
+    
 }
 
 .container-info h1 {
@@ -132,7 +133,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .imagem {
@@ -164,18 +164,26 @@ body{
     border-radius: 0px 10px 10px 0px;
     height: 100%;
     width: 100%;
-    align-self: center;
+    align-items: center;
     padding-left: 6px;
     color: var(--preto);
     display: flex;
     justify-content: center;
-    align-items: center;
-    
 }
 
 .tela-resposta-resumo{
+    align-items: flex-start;
     resize: none;
-    padding: 10px;
-    overflow-y: hidden;
+    overflow: auto;
+    padding: 10px;   
 }
 
+.tela-resposta-resumo::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+.tela-resposta-resumo::-webkit-scrollbar-thumb { 
+    background-color: var(--fontInfo);
+    border-radius: 20px;
+}
