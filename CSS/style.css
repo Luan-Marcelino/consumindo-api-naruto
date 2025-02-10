@@ -105,8 +105,8 @@ body{
     height: 50px;
     border: none;
     background-color: transparent;
+    
 }
-
 
 .seta-contador-esquerda i, .seta-contador-direta i {
     transform: scale(4);
@@ -179,6 +179,4 @@ body{
     padding: 10px;
     overflow-y: hidden;
 }
-
-
 

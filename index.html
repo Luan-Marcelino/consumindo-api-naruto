@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Imagens/icon.png">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style-celular.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="JS/script.js" defer></script>
     <title>Narutinho</title>
@@ -14,11 +15,11 @@
         <div class="conteiner">
 
             <div id="conteiner-contador">
-                <button class="seta-contador-esquerda"><i class="fa-solid fa-left-long"></i></i></button>
+                <button id="visivel" class="seta-contador-esquerda"><i class="fa-solid fa-left-long"></i></i></button>
 
                 <div class="contador">
                     <img class="imagem-contador" src="Imagens/sapo-naruto.png" alt="">
-                    <input class="input-contador" type="number">
+                    <input class="input-contador" type="number" value="0">
                     <button class="button-contador"><i class="fa-solid fa-play"></i></button>
                 </div>
 
