@@ -1,6 +1,6 @@
 # Personagens de Naruto.
 
-Este é um projeto de uma página web que consome uma API de Naruto para exibir informações sobre os personagens da série. A página permite que você altere o ID do personagem para visualizar os diferentes personagens do desenho, exibindo o nome, uma imagem, a vila de origem, os poderes e um breve resumo.
+Este é um projeto de uma página web, que consome uma API de Naruto para exibir informações sobre os personagens da série. A página permite que você altere o ID do personagem para visualizar os diferentes personagens do desenho, exibindo o nome, uma imagem, a vila de origem, os poderes e um breve resumo.
 
 ## Tecnologias Utilizadas
 
